@@ -28,23 +28,23 @@ const Pacman = ({ position, onMove }) => {
   }, [onMove]);
 
   return (
-    <div
-      className="pacman"
-      style={{
-        left: position.x * 20,
-        top: position.y * 20,
-      }}
-    >
-      <style jsx>{`
-        .pacman {
-          width: 20px;
-          height: 20px;
-          background-color: yellow;
-          position: absolute;
-          border-radius: 50%;
-        }
-      `}</style>
-    </div>
+      <div
+          className="pacman"
+          style={{
+            left: position.x * 20,
+            top: position.y * 20,
+            backgroundImage: 'url(/images/pacman.png)',
+            backgroundSize: 'cover',
+          }}
+      >
+        <style jsx>{`
+          .pacman {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+          }
+        `}</style>
+      </div>
   );
 };
 

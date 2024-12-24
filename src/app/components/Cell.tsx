@@ -1,9 +1,8 @@
-// components/Cell.js
 import React from 'react';
 
 const Cell = ({ type }) => {
   let cellClass = '';
-  
+
   switch (type) {
     case 1:
       cellClass = 'wall';
@@ -19,30 +18,30 @@ const Cell = ({ type }) => {
   }
 
   return (
-    <div className={`cell ${cellClass}`}>
-      <style jsx>{`
-        .cell {
-          width: 20px;
-          height: 20px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          box-sizing: border-box;
-        }
-        .wall {
-          background-color: #333;
-        }
-        .food {
-          background-color: #fff;
-          border-radius: 50%;
-          width: 8px;
-          height: 8px;
-        }
-        .empty {
-          background-color: #000;
-        }
-      `}</style>
-    </div>
+      <div className={`cell ${cellClass}`}>
+        <style jsx>{`
+          .cell {
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+          }
+          .wall {
+            background-color: #800080;
+          }
+          .food {
+            background-color: #ffff00;
+            border-radius: 50%;
+            width: 8px;
+            height: 8px;
+          }
+          .empty {
+            background-color: #000;
+          }
+        `}</style>
+      </div>
   );
 };
 
